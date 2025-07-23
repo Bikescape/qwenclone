@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TreasureHunt - Juego</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" href="../assets/icon-192.png" />
+  <title>TreasureHunt - Jugador</title>
+
+  <!-- 🔥 IMPORTANTE: Cargar Supabase ANTES que cualquier otro script que lo use -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="../assets/icon-192.png" />
 </head>
 <body>
   <div id="app">
