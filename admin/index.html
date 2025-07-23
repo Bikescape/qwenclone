@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creador de Juegos - TreasureHunt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Creador de Juegos</h1>
+
+    <section id="game-list">
+      <h2>Juegos Existentes</h2>
+      <button onclick="loadGames()">Actualizar Lista</button>
+      <ul id="games"></ul>
+      <button onclick="showCreateGameForm()">+ Nuevo Juego</button>
+    </section>
+
+    <section id="create-game" style="display:none;">
+      <h2>Crear Nuevo Juego</h2>
+      <form id="game-form">
+        <input type="text" id="title" placeholder="Título del juego" required />
+        <textarea id="description" placeholder="Descripción"></textarea>
+        <textarea id="narrative" placeholder="Narrativa inicial"></textarea>
+        <label><input type="checkbox" id="active" checked /> Activo</label>
+        <label>Mecánica: 
+          <select id="mechanic">
+            <option value="linear">Lineal</option>
+            <option value="selectable">Seleccionable</option>
+          </select>
+        </label>
+        <button type="submit">Guardar Juego</button>
+        <button type="button" onclick="cancelCreate()">Cancelar</button>
+      </form>
+    </section>
+
+    <section id="edit-locations" style="display:none;">
+      <h2>📍 Localizaciones</h2>
+      <button onclick="addLocation()">+ Añadir Localización</button>
+      <div id="locations-container"></div>
+      <button onclick="saveGame()">Guardar Todo</button>
+      <button onclick="previewGame()">Previsualizar</button>
+    </section>
+
+    <section id="preview" style="display:none;">
+      <h2>👁️ Previsualización</h2>
+      <div id="preview-content"></div>
+      <button onclick="exitPreview()">Volver</button>
+    </section>
+
+    <section id="rankings" style="display:none;">
+      <h2>🏆 Rankings</h2>
+      <div id="rankings-list"></div>
+    </section>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

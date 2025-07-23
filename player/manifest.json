@@ -1,0 +1,20 @@
+{
+  "name": "TreasureHunt",
+  "short_name": "TreasureHunt",
+  "start_url": "/qwenclone/player/index.html",
+  "display": "standalone",
+  "background_color": "#e3f2fd",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "/qwenclone/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/qwenclone/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

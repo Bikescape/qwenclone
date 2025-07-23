@@ -1,0 +1,12 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Arial', sans-serif; background: #e3f2fd; color: #1976d2; }
+#app { max-width: 500px; margin: 0 auto; padding: 20px; }
+section { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0; text-align: center; }
+button { background: #1976d2; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 6px; font-size: 16px; }
+button:disabled { background: #ccc; }
+input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; }
+#timer { font-size: 1.2em; color: #d32f2f; margin: 10px 0; }
+#gps-map { border: 1px solid #ccc; border-radius: 8px; }
+#sortable-list li { padding: 8px; margin: 4px 0; background: #e3f2fd; cursor: move; }
+.dragging { opacity: 0.5; }
+#hint-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000; }
